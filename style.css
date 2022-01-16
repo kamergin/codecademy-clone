@@ -1,0 +1,105 @@
+/* 
+1- Download the images
+2- Find and link the fonts  
+*/
+
+body {
+  font-family: 'Apercu', sans-serif;
+}
+
+ul {
+  font-family: 'Suisse', monospace;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Apercu';
+  font-style: normal;
+  font-weight: normal;
+  src: url('https://static-assets.codecademy.com/gamut/apercu-regular-pro.woff')
+      format('woff'),
+    url('https://static-assets.codecademy.com/gamut/apercu-regular-pro.woff2')
+      format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Apercu';
+  font-style: italic;
+  font-weight: normal;
+  src: url('https://static-assets.codecademy.com/gamut/apercu-italic-pro.woff')
+      format('woff'),
+    url('https://static-assets.codecademy.com/gamut/apercu-italic-pro.woff2')
+      format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Apercu';
+  font-style: normal;
+  font-weight: bold;
+  src: url('https://static-assets.codecademy.com/gamut/apercu-bold-pro.woff')
+      format('woff'),
+    url('https://static-assets.codecademy.com/gamut/apercu-bold-pro.woff2')
+      format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Apercu';
+  font-style: italic;
+  font-weight: bold;
+  src: url('https://static-assets.codecademy.com/gamut/apercu-bold-italic-pro.woff')
+      format('woff'),
+    url('https://static-assets.codecademy.com/gamut/apercu-bold-italic-pro.woff2')
+      format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Suisse';
+  font-style: normal;
+  font-weight: bold;
+  src: url('https://static-assets.codecademy.com/gamut/SuisseIntlMono-Bold-WebS.woff')
+      format('woff'),
+    url('https://static-assets.codecademy.com/gamut/SuisseIntlMono-Bold-WebS.woff2')
+      format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Suisse';
+  font-style: normal;
+  font-weight: normal;
+  src: url('https://static-assets.codecademy.com/gamut/SuisseIntlMono-Regular-WebS.woff')
+      format('woff'),
+    url('https://static-assets.codecademy.com/gamut/SuisseIntlMono-Regular-WebS.woff2')
+      format('woff2');
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2.75rem;
+}
+h3 {
+  font-size: 2.125rem;
+}
+h4 {
+  font-size: 1.625rem;
+}
+h5 {
+  font-size: 1.375rem;
+}
+h6 {
+  font-size: 1.25rem;
+}
+small {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
