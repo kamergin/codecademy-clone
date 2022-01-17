@@ -13,7 +13,9 @@
       <nav>
         <ul>
           <li>
-            <div class="logo"><img src="img/logo.svg" /></div>
+            <div class="logo">
+              <a href="#"><img src="img/logo.svg" /></a>
+            </div>
           </li>
           <li><a href="#home">Catalog</a></li>
           <li class="dropdown">
@@ -69,23 +71,48 @@
 
     <hr />
 
-    <h3>Join the millions learning to code with Codecademy for free</h3>
+    <div class="sec1container">
+      <div class="sec1">
+        <div class="imgback"><img src="img/ana.jpg" /></div>
+      </div>
+      <div class="sec2">
+        <form class="form" action="/action_page.php">
+          <h1>Join the millions learning to code with Codecademy for free</h1>
 
-    <form action="/action_page.php">
-      <label for="fname">Email</label>
-      <input type="text" id="fname" name="fname" /><br /><br />
-      <label for="lname">Password</label>
-      <input type="text" id="lname" name="lname" /><br /><br />
-      <input type="submit" value="Sign up" />
-    </form>
-
-    <p class="small">
-      By signing up for Codecademy, you agree to Codecademy's
-      <a href="#">Terms of Service</a> & <a href="#">Privacy Policy</a>.
-    </p>
-
-    <p>Or sign up using:</p>
-
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+          <div class="infobox">
+            <label for="pass">Password</label>
+            <img id="parent" class="svg" src="img/infooutline.svg" />
+            <div id="popup" style="display: none">
+              <p>
+                Create a secure password with at least 8 characters. Avoid
+                simple phrases or strings like “password”, “qwerty”, or “12345”.
+              </p>
+              <p>If your password is too weak, try including:</p>
+              <p>At least 1 letter and 1 number</p>
+              <p>A symbol (like !@#$%^)</p>
+              <p>A mix of upper and lower case letters</p>
+            </div>
+          </div>
+          <input type="text" id="pass" name="pass" />
+          <button id="signup" type="submit" value="Sign up">Sign up</button>
+        </form>
+        <div class="smallbox">
+          <p class="small">
+            By signing up for Codecademy, you agree to Codecademy's
+            <a href="#">Terms of Service</a> & <a href="#">Privacy Policy</a>.
+          </p>
+          <p>Or sign up using:</p>
+        </div>
+        <div class="firmsbox">
+          <div class="firms"><img src="img/LinkedIn.svg" /></div>
+          <div class="firms"><img src="img/Google.svg" /></div>
+          <div class="firms"><img src="img/Facebook.svg" /></div>
+          <div class="firms"><img src="img/Github.svg" /></div>
+        </div>
+      </div>
+    </div>
     <hr />
 
     <div>
@@ -281,5 +308,15 @@
       <li>Complete career-readiness</li>
       <li>The power of a coding community</li>
     </ul>
+
+    <script>
+      var e = document.getElementById('parent');
+      e.onmouseover = function () {
+        document.getElementById('popup').style.display = 'block';
+      };
+      e.onmouseout = function () {
+        document.getElementById('popup').style.display = 'none';
+      };
+    </script>
   </body>
 </html>
