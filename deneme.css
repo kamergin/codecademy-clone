@@ -1,55 +1,30 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito:300);
-
-@background-image: 'https://unsplash.imgix.net/photo-1414490929659-9a12b7e31907?q=75&fm=jpg&s=f838066e7aa9eab9d1ccc28fd5ec9574';
-
 body {
   margin: 0;
+  padding: 0;
+  height: 1000px;
 }
-
-.header {
-  display: flex;
-  align-items: center;
-  font-family: 'Nunito';
-  width: 100%;
-  background-color: white;
-  height: 4em;
+.black {
   position: fixed;
+  top: 0;
+  background: #333;
+  width: 100%;
+  height: 50px;
 }
-  .brand {
-    font-size: 1.3em;
-    padding-left: 1em;
-  }
-  .link {
-    display: flex;
-    list-style-type: none;
-    flex: 1 auto; // stretch to end of width
-    justify-content: flex-end;
-    margin: 0;
-    font-size: 1.3em;
-    li {
-      padding-right: 1em;
-    }
-  }
+.black ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.blog-container {
-  display: flex;
-  flex-flow: column wrap;
-  background: url(https://unsplash.imgix.net/photo-1414490929659-9a12b7e31907?q=75&fm=jpg&s=f838066e7aa9eab9d1ccc28fd5ec9574) no-repeat center center fixed;
-  background-size: cover;
-  section {
-    margin-top: 18.5em;
-    height: 30em;
-    .content {
-      width: 100%;
-      background-color: white;
-      padding: 3em 0 3em 0;
-      p {
-        line-height: 2em;
-        margin: 0 auto;
-        width: 60%;
-        background-color: white;
-      }
-    }
-  }
+.black ul li {
+  display: inline-block;
+  width: 100px;
+  color: red;
+}
+
+.blue {
+  position: fixed;
+  top: 0;
+  background: blue;
+  width: 100%;
+  height: 50px;
 }

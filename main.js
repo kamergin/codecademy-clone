@@ -1,3 +1,14 @@
+function info(){
+var e = document.getElementById('parent');
+e.onmouseover = function() {
+  document.getElementById('popup').style.display = 'block';
+}
+e.onmouseout = function() {
+  document.getElementById('popup').style.display = 'none';
+}
+}
+
+
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction1() {
@@ -27,10 +38,3 @@ window.onclick = function(event) {
 }
 
 
-var e = document.getElementById('parent');
-e.onmouseover = function() {
-  document.getElementById('popup').style.display = 'block';
-}
-e.onmouseout = function() {
-  document.getElementById('popup').style.display = 'none';
-}

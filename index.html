@@ -68,9 +68,6 @@
         </ul>
       </nav>
     </header>
-
-    <hr />
-
     <div class="sec1container">
       <div class="sec1">
         <div class="imgback"><img src="img/ana.jpg" /></div>
@@ -83,7 +80,12 @@
           <input type="email" id="email" name="email" />
           <div class="infobox">
             <label for="pass">Password</label>
-            <img id="parent" class="svg" src="img/infooutline.svg" />
+            <img
+              onmouseover="info()"
+              id="parent"
+              class="svg"
+              src="img/infooutline.svg"
+            />
             <div id="popup" style="display: none">
               <p>
                 Create a secure password with at least 8 characters. Avoid
@@ -308,15 +310,5 @@
       <li>Complete career-readiness</li>
       <li>The power of a coding community</li>
     </ul>
-
-    <script>
-      var e = document.getElementById('parent');
-      e.onmouseover = function () {
-        document.getElementById('popup').style.display = 'block';
-      };
-      e.onmouseout = function () {
-        document.getElementById('popup').style.display = 'none';
-      };
-    </script>
   </body>
 </html>
