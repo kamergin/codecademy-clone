@@ -6,46 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learn to Code - for Free | Codecademy</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.js" />
   </head>
   <body>
     <header>
+      <div class="logo"><img src="/img/logo.svg" /></div>
       <nav>
         <ul>
-          <li>Catalog</li>
-          <li>
-            Resources
-            <ul>
-              <li>Challenges</li>
-              <li>Docs</li>
-              <li>Cheatsheets</li>
-              <li>Articles</li>
-              <li>Videos</li>
-              <li>Blog</li>
-              <li>Projects</li>
-              <li>Career Center</li>
-            </ul>
+          <li><a href="#home">Catalog</a></li>
+          <li class="dropdown">
+            <span class="dropbtn" onclick="myFunction1()">Resources</span>
+            <div class="dropdown-content" id="myDropdown1">
+              <a href="#">Challanges</a>
+              <a href="#">Cheatsheets</a>
+              <a href="#">Articles</a>
+              <a href="#">Videos</a>
+              <a href="#">Blog</a>
+              <a href="#">Projects</a>
+              <a href="#home">Career Center</a>
+            </div>
           </li>
-          <li>
-            Community
-            <ul>
-              <li>Forums</li>
-              <li>Chat</li>
-              <li>Chapters</li>
-              <li>Events</li>
-              <li>Learner Stories</li>
-            </ul>
+          <li class="dropdown">
+            <span class="dropbtn" onclick="myFunction2()">Community</span>
+            <div class="dropdown-content" id="myDropdown2">
+              <a href="#">Forums</a>
+              <a href="#">Chat</a>
+              <a href="#">Chapters</a>
+              <a href="#">Events</a>
+              <a href="#">Learner Stories</a>
+            </div>
           </li>
-          <li>
-            Pro Pricing
-            <ul>
-              <li>For Individuals</li>
-              <li>For Students</li>
-            </ul>
+          <li class="dropdown">
+            <span class="dropbtn" onclick="myFunction3()">Pro Pricing</span>
+            <div class="dropdown-content" id="myDropdown3">
+              <a href="#">For Individuals</a>
+              <a href="#">For Students</a>
+            </div>
           </li>
-          <li>For Business</li>
+          <a href="#home">For Business</a>
         </ul>
       </nav>
-      <p>Log In</p>
+      <div class="loginSearch">
+        <img id="searchicon" src="/img/searchicon.svg" alt="search icon" />
+        <p>Log In</p>
+      </div>
     </header>
 
     <hr />
@@ -130,10 +134,10 @@
     <p>Rosita R., Front-End</p>
     <hr />
 
-    <h2>Join in on something big</h2>
-    <h2>50M Learners</h2>
-    <h2>190+ Countries</h2>
-    <h2>3.7B Code submits</h2>
+    <h3>Join in on something big</h3>
+    <h3>50M Learners</h3>
+    <h3>190+ Countries</h3>
+    <h3>3.7B Code submits</h3>
     <hr />
     <h2>Not sure where to start?</h2>
     <p>
@@ -255,7 +259,7 @@
     </footer>
     <hr />
     <h3>Self-paced learning that works</h3>
-    <ul>
+    <ul class="last">
       <li>Interactive, hands-on learning</li>
       <li>Designed for all levels</li>
       <li>Guidance every step of the way</li>
