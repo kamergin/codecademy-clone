@@ -10,12 +10,15 @@
   </head>
   <body>
     <header>
-      <div class="logo"><img src="img/logo.svg" /></div>
       <nav>
         <ul>
+          <li>
+            <div class="logo"><img src="img/logo.svg" /></div>
+          </li>
           <li><a href="#home">Catalog</a></li>
           <li class="dropdown">
             <span class="dropbtn" onclick="myFunction1()">Resources</span>
+            <img class="svg" src="img/ArrowDownFilled Icon.svg" />
             <div class="dropdown-content" id="myDropdown1">
               <a href="#">Challanges</a>
               <a href="#">Cheatsheets</a>
@@ -28,6 +31,7 @@
           </li>
           <li class="dropdown">
             <span class="dropbtn" onclick="myFunction2()">Community</span>
+            <img class="svg" src="img/ArrowDownFilled Icon.svg" />
             <div class="dropdown-content" id="myDropdown2">
               <a href="#">Forums</a>
               <a href="#">Chat</a>
@@ -38,18 +42,29 @@
           </li>
           <li class="dropdown">
             <span class="dropbtn" onclick="myFunction3()">Pro Pricing</span>
+            <img class="svg" src="img/ArrowDownFilled Icon.svg" />
             <div class="dropdown-content" id="myDropdown3">
               <a href="#">For Individuals</a>
               <a href="#">For Students</a>
             </div>
           </li>
-          <a href="#home">For Business</a>
+          <li>
+            <a href="#home">For Business</a>
+          </li>
+          <div class="searchicon">
+            <div class="searchiconbox">
+              <img
+                class="searchimg"
+                src="img/searchicon.svg"
+                alt="search icon"
+              />
+            </div>
+          </div>
+          <div class="login">
+            <a href="#home">Log In</a>
+          </div>
         </ul>
       </nav>
-      <div class="loginSearch">
-        <img id="searchicon" src="img/searchicon.svg" alt="search icon" />
-        <p>Log In</p>
-      </div>
     </header>
 
     <hr />
