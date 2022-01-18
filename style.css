@@ -19,8 +19,8 @@ body {
   font-weight: normal;
   src: url('https://static-assets.codecademy.com/gamut/apercu-regular-pro.woff')
       format('woff'),
-    url('https://static-assets.codecademy.com/gamut/apercu-regular-pro.woff2')
-      format('woff2');
+    url('https://static-assets.codecademy.com/gamut/apercu-bold-pro.woff'),
+    url('https://static-assets.codecademy.com/gamut/SuisseIntlMono-Regular-WebS.woff');
 }
 @font-face {
   font-display: swap;
@@ -114,12 +114,15 @@ header {
   width: 100%;
 }
 
+ul {
+  list-style: none;
+}
+
 nav ul {
   justify-content: space-between;
   min-height: 40px;
   margin-right: auto;
   display: flex;
-  list-style: none;
   gap: 20px;
   align-items: center;
   margin: 0;
@@ -201,9 +204,13 @@ nav ul {
   display: block;
 }
 
+.privacy a:visited,
+a:visited,
 nav a:visited {
   color: inherit;
 }
+.privacy a:hover,
+footer a:hover,
 nav a:hover {
   color: #5131f3;
 }
@@ -308,4 +315,49 @@ form {
   margin-left: 30px;
   padding: 20px;
   line-height: 2em;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 64px;
+}
+
+.footsec1 {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  line-height: 2em;
+}
+
+.footsec1 > ul {
+  width: 33.3%;
+}
+
+.footsec2 > ul {
+  width: 50%;
+  display: block;
+}
+
+.footsec2 {
+  flex: 1;
+  flex-wrap: wrap;
+  display: flex;
+  line-height: 2em;
+  border-left: black 1px solid;
+  padding-left: 4rem;
+  justify-content: baseline;
+}
+
+.privacy {
+  display: flex;
+  padding: 14px 64px;
+  border-top: 1px solid black;
+}
+.privacy li {
+  padding: 5px;
+  font-size: 14px;
+}
+.lastwords {
+  margin-left: auto;
 }
