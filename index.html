@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learn to Code - for Free | Codecademy</title>
+    <link rel="stylesheet" href="fontfile.css" />
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="main.js"></script>
   </head>
   <body>
     <header>
-      <nav class="navbar">
+      <nav>
         <ul>
           <li>
             <div class="logo">
@@ -68,277 +69,274 @@
         </ul>
       </nav>
     </header>
-    <div class="sec1container">
+    <main>
       <div class="sec1">
-        <div class="imgback"><img src="img/ana.jpg" /></div>
+        <div class="sec1-1">
+          <div class="imgback"><img src="img/ana.jpg" /></div>
+        </div>
+        <div class="sec1-2">
+          <form class="form" action="/action_page.php">
+            <h1>Join the millions learning to code with Codecademy for free</h1>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+            <div class="infobox">
+              <label for="pass">Password</label>
+              <img
+                onmouseover="info()"
+                id="parent"
+                class="svg"
+                src="img/infooutline.svg"
+              />
+              <div id="popup" style="display: none">
+                <p>
+                  Create a secure password with at least 8 characters. Avoid
+                  simple phrases or strings like “password”, “qwerty”, or “12345”.
+                </p>
+                <p>If your password is too weak, try including:</p>
+                <p>At least 1 letter and 1 number</p>
+                <p>A symbol (like !@#$%^)</p>
+                <p>A mix of upper and lower case letters</p>
+              </div>
+            </div>
+            <input type="text" id="pass" name="pass" />
+            <button id="signup" type="submit" value="Sign up">Sign up</button>
+          </form>
+          <div class="smallbox">
+            <p class="small">
+              By signing up for Codecademy, you agree to Codecademy's
+              <a href="#">Terms of Service</a> & <a href="#">Privacy Policy</a>.
+            </p>
+            <p>Or sign up using:</p>
+          </div>
+          <div class="firmsbox">
+            <div class="firms"><img src="img/LinkedIn.svg" /></div>
+            <div class="firms"><img src="img/Google.svg" /></div>
+            <div class="firms"><img src="img/Facebook.svg" /></div>
+            <div class="firms"><img src="img/Github.svg" /></div>
+          </div>
+        </div>
       </div>
       <div class="sec2">
-        <form class="form" action="/action_page.php">
-          <h1>Join the millions learning to code with Codecademy for free</h1>
-
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" />
-          <div class="infobox">
-            <label for="pass">Password</label>
-            <img
-              onmouseover="info()"
-              id="parent"
-              class="svg"
-              src="img/infooutline.svg"
-            />
-            <div id="popup" style="display: none">
-              <p>
-                Create a secure password with at least 8 characters. Avoid
-                simple phrases or strings like “password”, “qwerty”, or “12345”.
-              </p>
-              <p>If your password is too weak, try including:</p>
-              <p>At least 1 letter and 1 number</p>
-              <p>A symbol (like !@#$%^)</p>
-              <p>A mix of upper and lower case letters</p>
-            </div>
-          </div>
-          <input type="text" id="pass" name="pass" />
-          <button id="signup" type="submit" value="Sign up">Sign up</button>
-        </form>
-        <div class="smallbox">
-          <p class="small">
-            By signing up for Codecademy, you agree to Codecademy's
-            <a href="#">Terms of Service</a> & <a href="#">Privacy Policy</a>.
+        <div>
+          <h2>Join in on something big</h2>
+        </div>
+        <div>
+          <h2>50M</h2>
+          <h5> Learners<h5>
+        </div>
+        <div>
+          <h2>190+</h2>
+          <h5> Countries<h5>
+        </div>
+        <div>
+          <h2>3.7B</h2>
+          <h5> Code submits<h5>
+        </div>
+      </div>
+      <div class="sec3">
+        <div class="sec3-1">
+          <p class="monotitle">Codecademy for Business</p>
+          <h2>Level up your team's skills</h2>
+          <p>
+            Give your team the knowledge, experience, and confidence they need to
+            tackle any problem.
           </p>
-          <p>Or sign up using:</p>
+          <button id="explorebtn"><p>Explore business plans</p></button>
         </div>
-        <div class="firmsbox">
-          <div class="firms"><img src="img/LinkedIn.svg" /></div>
-          <div class="firms"><img src="img/Google.svg" /></div>
-          <div class="firms"><img src="img/Facebook.svg" /></div>
-          <div class="firms"><img src="img/Github.svg" /></div>
+        <div class="sec3-2">
+          <div class="sec3-2-1">
+            <img src="img/svgexport-1.svg">
+            <img src="img/svgexport-2.svg">
+            <img src="img/svgexport-3.svg">
+            <img src="img/svgexport-4.svg">
+          </div>
+          <div class="sec3-2-2">
+            <img src="img/svgexport-5.svg">
+            <img src="img/svgexport-6.svg">
+            <img src="img/svgexport-7.svg">
+            <img src="img/svgexport-8.svg">
+          </div>
         </div>
       </div>
-    </div>
-    <hr />
-
-    <div>
-      <h2>What’s your goal?</h2>
-      <h3>Build a career</h3>
-      <p>
-        Career Paths are our most complete offering, with everything you need to
-        land the job.
-      </p>
-      <h3>Gain a skill</h3>
-      <h3>Learn a language</h3>
-      <h3>Explore a subject</h3>
-
-      <p>
-        Career Path Computer Science Beginner friendly , 82 Lessons Foundations
-      </p>
-      <p>
-        Career Path Data Scientist Beginner friendly , 85 Lessons Job Essentials
-      </p>
-      <p>
-        Career Path Full-Stack Engineer Beginner friendly , 145 Lessons Job
-        Essentials
-      </p>
-      <p>
-        Career Path Front-End Engineer Beginner friendly , 121 Lessons Job
-        Essentials
-      </p>
-      <button>Browse Catalog</button>
-    </div>
-
-    <hr />
-
-    <p>Beginners welcome</p>
-    <h2>Start coding in Seconds</h2>
-    <p>
-      Go ahead, give it a try. Our hands-on learning environment means you’ll be
-      writing real code from your very first lesson.
-    </p>
-    <p>Continue lesson</p>
-    <p>More beginner courses</p>
-
-    <iframe
-      title="codebytes"
-      src="https://www.codecademy.com/codebyte-editor?lang=javascript&amp;text=Ci8vIEFkZCB5b3VyIG93biB0ZXh0IGJldHdlZW4KLy8gdGhlIHF1b3RhdGlvbiBtYXJrcy4KCmNvbnN0IGZpcnN0TmFtZSA9ICJBZGEiOwpjb25zdCBsYXN0TmFtZSA9ICJMb3ZlbGFjZSI7CgovLyBOb3cgcnVuIHlvdXIgY29kZSB0byBzZWUKLy8gYSBwZXJzb25hbGl6ZWQgbWVzc2FnZS4KCmNvbnNvbGUubG9nKApgV2VsY29tZSwgJHtmaXJzdE5hbWV9ICR7bGFzdE5hbWV9IWAKKTsK&amp;copy-mode=hide&amp;client-name=homepage"
-      class="gamut-q461sz-CodebyteFrame ehozgbu1"
-    ></iframe>
-
-    <hr />
-
-    <h2>Stories from real people</h2>
-    <p>Watch and read stories from the Codecademy community.</p>
-    <button>Explore more stories</button>
-
-    <h3>Taking a different path: One Team Lead's story</h3>
-    <p>Giacomo S., Team Lead, London</p>
-    <h3>See how this Architect switched to UX Design</h3>
-    <p>Alison V., Senior UX Designer @ Acquia, Columbus</p>
-    <h3>Lessons from a Chef turned Deputy CTO</h3>
-    <p>Manuel S., Deputy CTO @ PaxFamilia, Brussels</p>
-    <h3>How one Developer learned to code with her disability</h3>
-    <p>Rosita R., Front-End</p>
-
-    <hr />
-
-    <div class="statistics">
-      <div>
-        <h2>Join in on something big</h2>
-      </div>
-      <div>
-        <h2>50M</h2>
-        <h5> Learners<h5>
-      </div>
-      <div>
-        <h2>190+</h2>
-        <h5> Countries<h5>
-      </div>
-      <div>
-        <h2>3.7B</h2>
-        <h5> Code submits<h5>
-      </div>
-    </div>
-
-
-
-  <hr />
-    <h2>Not sure where to start?</h2>
-    <p>
-      This short quiz will sort you out. Answer a few simple questions to get
-      personal career advice and course recommendations.
-    </p>
-    <button>Take the quiz</button>
-    <hr />
-
-    <p>Codecademy for Business</p>
-    <h2>Level up your team's skills</h2>
-    <p>
-      Give your team the knowledge, experience, and confidence they need to
-      tackle any problem.
-    </p>
-    <p>Explore business plans</p>
-    <hr />
-    <h3>Self-paced learning that works</h3>
-    <ul class="last">
-      <li>Interactive, hands-on learning</li>
-      <li>Designed for all levels</li>
-      <li>Guidance every step of the way</li>
-      <li>Complete career-readiness</li>
-      <li>The power of a coding community</li>
-    </ul>
-
-    <hr />
-
-    <h2>Start for free</h2>
-    <p>
-      If you’ve made it this far, you must be at least a little curious. Sign up
-      and take the first step toward your goals.
-    </p>
-    <button>Sign up</button>
-    <hr />
-
-    <footer>
-      <div class="footsec1">
-        <ul class="company">
-          <li>COMPANY</li>
-          <li></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Affiliates</a></li>
-          <li><a href="#">Shop</a></li>
-          <li>
-            <img src="img/twitter.svg" /><img src="img/Facebook.svg" />
-            <img src="img/instagram.svg" />
-            <img src="img/youtube.svg" />
-          </li>
-        </ul>
-        <ul class="resources">
-          <li>RESOURCES</li>
-          <li></li>
-          <li><a href="#">Challenges</a></li>
-          <li><a href="#">Docs</a></li>
-          <li><a href="#">Cheatsheets</a></li>
-          <li><a href="#">Articles</a></li>
-          <li><a href="#">Videos</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Career Center</a></li>
-        </ul>
-        <ul class="community">
-          <li>COMMUNITY</li>
-          <li></li>
-          <li><a href="#">Forums</a></li>
-          <li><a href="#">Chapters</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Learner Stories</a></li>
-        </ul>
-        <ul class="mobile">
-          <li>MOBILE</li>
-          <li>
-            <img src="img/appstore.svg" alt="Download on the App Store" />
-          </li>
-          <li>
-            <img src="img/googleplay.png" alt="Download it on Google Play" />
-          </li>
-        </ul>
-        <ul class="e-plans">
-          <li>ENTERPRISE PLANS</li>
-          <li></li>
-          <li><a href="#">For Business</a></li>
-          <li>SUPPORT</li>
-          <li></li>
-          <li><a href="#">Help Center</a></li>
-        </ul>
-        <ul class="i-plans">
-          <li><a href="#">INDIVIDUAL PLANS</li>
-          <li><a href="#"></a></li>
-          <li><a href="#">Pro Membership</a></li>
-          <li><a href="#">For Students</a></li>
-        </ul>
-      </div>
-      <div class="footsec2">
-        <ul class="catalogue">
-          <li>COURSE CATALOG</li>
-          <li><strong>Subjects</strong></li>
-          <li></li>
-          <li><a href="#">Web Development</a></li>
-          <li><a href="#">Data Science</a></li>
-          <li><a href="#">Computer Science</a></li>
-          <li><a href="#">Developer Tools</a></li>
-          <li><a href="#">Machine Learning</a></li>
-          <li><a href="#">Code Foundations</a></li>
-          <li><a href="#">Web Design</a></li>
-          <li>—</li>
-          <li><a href="#">Full Catalog</a></li>
-          <li><a href="#">Beta Content</a></li>
-          <li><a href="#">Roadmap</a></li>
-        </ul>
-        <ul class="languages">
-          <li><strong>Languages</strong></li>
-          <li><a href="#">HTML & CSS</a></li>
-          <li><a href="#">Python</a></li>
-          <li><a href="#">JavaScript</a></li>
-          <li><a href="#">Java</a></li>
-          <li><a href="#">SQL</a></li>
-          <li><a href="#">Bash/Shell</a></li>
-          <li><a href="#">Ruby</a></li>
-          <li><a href="#">C++</a></li>
-          <li><a href="#">R</a></li>
-          <li><a href="#">C#</a></li>
-          <li><a href="#">PHP</a></li>
-          <li><a href="#">Go</a></li>
-          <li><a href="#">Swift</a></li>
-          <li><a href="#">Kotlin</a></li>
-        </ul>
-      </div>
-    </footer>
-    <ul class="privacy">
-      <li><a href="#">Privacy Policy</a></li>
-      <li>|</li>
-      <li><a href="#">Cookie Policy</a></li>
-      <li>|</li>
-      <li><a href="#">Do Not Sell My Personal Information</a></li>
-      <li>|</li>
-      <li><a href="#">Terms</a></li>
-      <li class="lastwords"><a href="#">Made with️❤️in NYC © 2022 Codecademy</a></li>
-    </ul>
+      <footer>
+        <div class="footsec1">
+          <ul class="company">
+            <li>COMPANY</li>
+            <li></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Affiliates</a></li>
+            <li><a href="#">Shop</a></li>
+            <li>
+              <img src="img/twitter.svg" /><img src="img/Facebook.svg" />
+              <img src="img/instagram.svg" />
+              <img src="img/youtube.svg" />
+            </li>
+          </ul>
+          <ul class="resources">
+            <li>RESOURCES</li>
+            <li></li>
+            <li><a href="#">Challenges</a></li>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Cheatsheets</a></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Career Center</a></li>
+          </ul>
+          <ul class="community">
+            <li>COMMUNITY</li>
+            <li></li>
+            <li><a href="#">Forums</a></li>
+            <li><a href="#">Chapters</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Learner Stories</a></li>
+          </ul>
+          <ul class="mobile">
+            <li>MOBILE</li>
+            <li>
+              <img src="img/appstore.svg" alt="Download on the App Store" />
+            </li>
+            <li>
+              <img src="img/googleplay.png" alt="Download it on Google Play" />
+            </li>
+          </ul>
+          <ul class="e-plans">
+            <li>ENTERPRISE PLANS</li>
+            <li></li>
+            <li><a href="#">For Business</a></li>
+            <li>SUPPORT</li>
+            <li></li>
+            <li><a href="#">Help Center</a></li>
+          </ul>
+          <ul class="i-plans">
+            <li>INDIVIDUAL PLANS</li>
+            <li><a href="#"></a></li>
+            <li><a href="#">Pro Membership</a></li>
+            <li><a href="#">For Students</a></li>
+          </ul>
+        </div>
+        <div class="footsec2">
+          <ul class="catalogue">
+            <li>COURSE CATALOG</li>
+            <li><strong>Subjects</strong></li>
+            <li></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Data Science</a></li>
+            <li><a href="#">Computer Science</a></li>
+            <li><a href="#">Developer Tools</a></li>
+            <li><a href="#">Machine Learning</a></li>
+            <li><a href="#">Code Foundations</a></li>
+            <li><a href="#">Web Design</a></li>
+            <li>—</li>
+            <li><a href="#">Full Catalog</a></li>
+            <li><a href="#">Beta Content</a></li>
+            <li><a href="#">Roadmap</a></li>
+          </ul>
+          <ul class="languages">
+            <li><strong>Languages</strong></li>
+            <li><a href="#">HTML & CSS</a></li>
+            <li><a href="#">Python</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">SQL</a></li>
+            <li><a href="#">Bash/Shell</a></li>
+            <li><a href="#">Ruby</a></li>
+            <li><a href="#">C++</a></li>
+            <li><a href="#">R</a></li>
+            <li><a href="#">C#</a></li>
+            <li><a href="#">PHP</a></li>
+            <li><a href="#">Go</a></li>
+            <li><a href="#">Swift</a></li>
+            <li><a href="#">Kotlin</a></li>
+          </ul>
+        </div>
+      </footer>
+      <ul class="privacy">
+        <li><a href="#">Privacy Policy</a></li>
+        <li>|</li>
+        <li><a href="#">Cookie Policy</a></li>
+        <li>|</li>
+        <li><a href="#">Do Not Sell My Personal Information</a></li>
+        <li>|</li>
+        <li><a href="#">Terms</a></li>
+        <li class="lastwords"><a href="#">Made with️❤️in NYC © 2022 Codecademy</a></li>
+      </ul>
+    </main>
   </body>
 </html>
+
+
+
+
+
+
+<!-- section start />
+
+<hr>
+
+<h2>Not sure where to start?</h2>
+<p>This short quiz will sort you out. Answer a few simple questions to get personal career advice and course recommendations.</p>
+<button>Take the quiz</button>
+
+<hr>
+
+<h2>Start for free</h2>
+<p>If you’ve made it this far, you must be at least a little curious. Sign up and take the first step toward your goals.</p>
+<button>Sign up</button>
+
+<hr />
+
+<h3>Self-paced learning that works</h3>
+<ul class="last">
+  <li>Interactive, hands-on learning</li>
+  <li>Designed for all levels</li>
+  <li>Guidance every step of the way</li>
+  <li>Complete career-readiness</li>
+  <li>The power of a coding community</li>
+</ul>
+
+<hr />
+
+<h2>What’s your goal?</h2>
+<h3>Build a career</h3>
+<p>Career Paths are our most complete offering, with everything you need to land the job. </p>
+<h3>Gain a skill</h3>
+<h3>Learn a language</h3>
+<h3>Explore a subject</h3>
+<p>Career Path Computer Science Beginner friendly , 82 Lessons Foundations</p>
+<p>Career Path Data Scientist Beginner friendly , 85 Lessons Job Essentials</p>
+<p>Career Path Full-Stack Engineer Beginner friendly , 145 Lessons Job Essentials</p>
+<p>Career Path Front-End Engineer Beginner friendly , 121 Lessons Job Essentials</p>
+<button>Browse Catalog</button>
+
+<hr />
+
+<h2>Stories from real people</h2>
+<p>Watch and read stories from the Codecademy community.</p>
+<button>Explore more stories</button>
+<h3>Taking a different path: One Team Lead's story</h3>
+<p>Giacomo S., Team Lead, London</p>
+<h3>See how this Architect switched to UX Design</h3>
+<p>Alison V., Senior UX Designer @ Acquia, Columbus</p>
+<h3>Lessons from a Chef turned Deputy CTO</h3>
+<p>Manuel S., Deputy CTO @ PaxFamilia, Brussels</p>
+<h3>How one Developer learned to code with her disability</h3>
+<p>Rosita R., Front-End</p>
+
+<hr />
+
+<p>Beginners welcome</p>
+<h2>Start coding in Seconds</h2>
+<p>Go ahead, give it a try. Our hands-on learning environment means you’ll be writing real code from your very first lesson.</p>
+<p>Continue lesson</p>
+<p>More beginner courses</p>
+<iframe
+  title="codebytes"
+  src="https://www.codecademy.com/codebyte-editor?lang=javascript&amp;text=Ci8vIEFkZCB5b3VyIG93biB0ZXh0IGJldHdlZW4KLy8gdGhlIHF1b3RhdGlvbiBtYXJrcy4KCmNvbnN0IGZpcnN0TmFtZSA9ICJBZGEiOwpjb25zdCBsYXN0TmFtZSA9ICJMb3ZlbGFjZSI7CgovLyBOb3cgcnVuIHlvdXIgY29kZSB0byBzZWUKLy8gYSBwZXJzb25hbGl6ZWQgbWVzc2FnZS4KCmNvbnNvbGUubG9nKApgV2VsY29tZSwgJHtmaXJzdE5hbWV9ICR7bGFzdE5hbWV9IWAKKTsK&amp;copy-mode=hide&amp;client-name=homepage"
+  class="gamut-q461sz-CodebyteFrame ehozgbu1"></iframe>
+
+<hr />
+
+-- section end />

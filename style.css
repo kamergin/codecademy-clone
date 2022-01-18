@@ -1,76 +1,12 @@
-/* 
-1- Download the images
-2- Find and link the fonts  
-*/
 * {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
-body {
-  font-family: 'Apercu', sans-serif;
-  background-color: #fef0e5;
-}
 
-@font-face {
-  font-display: swap;
-  font-family: 'Apercu';
-  font-style: normal;
-  font-weight: normal;
-  src: url('https://static-assets.codecademy.com/gamut/apercu-regular-pro.woff')
-      format('woff'),
-    url('https://static-assets.codecademy.com/gamut/apercu-bold-pro.woff'),
-    url('https://static-assets.codecademy.com/gamut/SuisseIntlMono-Regular-WebS.woff');
-}
-@font-face {
-  font-display: swap;
-  font-family: 'Apercu';
-  font-style: italic;
-  font-weight: normal;
-  src: url('https://static-assets.codecademy.com/gamut/apercu-italic-pro.woff')
-      format('woff'),
-    url('https://static-assets.codecademy.com/gamut/apercu-italic-pro.woff2')
-      format('woff2');
-}
-@font-face {
-  font-display: swap;
-  font-family: 'Apercu';
-  font-style: normal;
-  font-weight: bold;
-  src: url('https://static-assets.codecademy.com/gamut/apercu-bold-pro.woff')
-      format('woff'),
-    url('https://static-assets.codecademy.com/gamut/apercu-bold-pro.woff2')
-      format('woff2');
-}
-@font-face {
-  font-display: swap;
-  font-family: 'Apercu';
-  font-style: italic;
-  font-weight: bold;
-  src: url('https://static-assets.codecademy.com/gamut/apercu-bold-italic-pro.woff')
-      format('woff'),
-    url('https://static-assets.codecademy.com/gamut/apercu-bold-italic-pro.woff2')
-      format('woff2');
-}
-@font-face {
-  font-display: swap;
-  font-family: 'Suisse';
-  font-style: normal;
-  font-weight: bold;
-  src: url('https://static-assets.codecademy.com/gamut/SuisseIntlMono-Bold-WebS.woff')
-      format('woff'),
-    url('https://static-assets.codecademy.com/gamut/SuisseIntlMono-Bold-WebS.woff2')
-      format('woff2');
-}
-@font-face {
-  font-display: swap;
-  font-family: 'Suisse';
-  font-style: normal;
-  font-weight: normal;
-  src: url('https://static-assets.codecademy.com/gamut/SuisseIntlMono-Regular-WebS.woff')
-      format('woff'),
-    url('https://static-assets.codecademy.com/gamut/SuisseIntlMono-Regular-WebS.woff2')
-      format('woff2');
+body {
+  background-color: #fef0e5;
+  font-family: 'Apercu', sans-serif;
 }
 h1,
 h2,
@@ -105,6 +41,16 @@ small {
   font-weight: 400;
 }
 
+p {
+  text-align: left;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+p.monotitle {
+  font-family: 'Suisse', monospace;
+}
+
 header {
   padding: 14px 64px;
   position: fixed;
@@ -121,13 +67,10 @@ ul {
 nav ul {
   justify-content: space-between;
   min-height: 40px;
-  margin-right: auto;
   display: flex;
   gap: 20px;
   align-items: center;
-  margin: 0;
   padding: 5px 0px 5px 0px;
-  flex: 1;
 }
 
 .searchimg {
@@ -220,12 +163,12 @@ a:active {
   text-decoration: none;
 }
 
-.sec1container {
+.sec1 {
   display: flex;
   padding: 32px 64px;
   margin-top: 80px;
 }
-.sec1 img {
+.sec1-1 img {
   max-width: 35vw;
   border: 1px solid black;
   margin-left: 15px;
@@ -236,12 +179,12 @@ a:active {
   max-width: 34vw;
   background-image: url(/img/diagonaldense.svg);
 }
-.sec1 {
+.sec1-1 {
   flex: 1;
   text-align: center;
   align-self: center;
 }
-.sec2 {
+.sec1-2 {
   flex: 1;
   padding-left: 40px;
 }
@@ -260,6 +203,15 @@ form {
   background-color: #370fdb;
   color: white;
   border: unset;
+}
+
+#explorebtn {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #fed300;
+  color: #101630;
+  padding: 10px;
 }
 
 #signup:hover {
@@ -317,26 +269,63 @@ form {
   line-height: 2em;
 }
 
-.statistics {
+.sec2 {
   display: flex;
   background-color: #3a0fe5;
   color: white;
   padding: 96px 96px;
   gap: 50px;
 }
-.statistics > div {
-  flex: 1;
+.sec2 > div {
+  flex: 0;
   text-align: center;
-  vertical-align: bottom;
 }
-.statistics > div:first-child {
+.sec2 > div:first-child {
   flex: 3;
   text-align: left;
   margin-left: 96px;
 }
-.statistics > div > h2 {
+.sec2 > div > h2 {
   margin-bottom: 0px;
   text-align: bottom;
+}
+
+.sec3 {
+  display: flex;
+  background-color: #101630;
+  color: white;
+  padding: 96px 96px;
+  align-items: center;
+}
+
+.sec3-1 {
+  flex-direction: column;
+  flex: 1;
+  width: 50%;
+}
+.sec3-2 {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+  vertical-align: middle;
+  gap: 50px;
+  flex: 1;
+  width: 50%;
+}
+
+.sec3-2 > div > img {
+  width: 6rem;
+  height: 100%;
+}
+.sec3-2-1 {
+  display: flex;
+  gap: 10px;
+}
+
+.sec3-2-2 {
+  display: flex;
+  gap: 10px;
 }
 
 footer {

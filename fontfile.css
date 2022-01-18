@@ -1,0 +1,60 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Apercu';
+  font-style: normal;
+  font-weight: normal;
+  src: url('https://static-assets.codecademy.com/gamut/apercu-regular-pro.woff')
+      format('woff'),
+    url('https://static-assets.codecademy.com/gamut/apercu-bold-pro.woff'),
+    url('https://static-assets.codecademy.com/gamut/SuisseIntlMono-Regular-WebS.woff');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Apercu';
+  font-style: italic;
+  font-weight: normal;
+  src: url('https://static-assets.codecademy.com/gamut/apercu-italic-pro.woff')
+      format('woff'),
+    url('https://static-assets.codecademy.com/gamut/apercu-italic-pro.woff2')
+      format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Apercu';
+  font-style: normal;
+  font-weight: bold;
+  src: url('https://static-assets.codecademy.com/gamut/apercu-bold-pro.woff')
+      format('woff'),
+    url('https://static-assets.codecademy.com/gamut/apercu-bold-pro.woff2')
+      format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Apercu';
+  font-style: italic;
+  font-weight: bold;
+  src: url('https://static-assets.codecademy.com/gamut/apercu-bold-italic-pro.woff')
+      format('woff'),
+    url('https://static-assets.codecademy.com/gamut/apercu-bold-italic-pro.woff2')
+      format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Suisse';
+  font-style: normal;
+  font-weight: bold;
+  src: url('https://static-assets.codecademy.com/gamut/SuisseIntlMono-Bold-WebS.woff')
+      format('woff'),
+    url('https://static-assets.codecademy.com/gamut/SuisseIntlMono-Bold-WebS.woff2')
+      format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Suisse';
+  font-style: normal;
+  font-weight: normal;
+  src: url('https://static-assets.codecademy.com/gamut/SuisseIntlMono-Regular-WebS.woff')
+      format('woff'),
+    url('https://static-assets.codecademy.com/gamut/SuisseIntlMono-Regular-WebS.woff2')
+      format('woff2');
+}
