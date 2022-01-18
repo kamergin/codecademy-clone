@@ -317,17 +317,38 @@ form {
   line-height: 2em;
 }
 
+.statistics {
+  display: flex;
+  background-color: #3a0fe5;
+  color: white;
+  padding: 96px 96px;
+  gap: 50px;
+}
+.statistics > div {
+  flex: 1;
+  text-align: center;
+  vertical-align: bottom;
+}
+.statistics > div:first-child {
+  flex: 3;
+  text-align: left;
+  margin-left: 96px;
+}
+.statistics > div > h2 {
+  margin-bottom: 0px;
+  text-align: bottom;
+}
+
 footer {
   display: flex;
-  justify-content: space-between;
   padding: 14px 64px;
+  line-height: 2em;
 }
 
 .footsec1 {
   display: flex;
   flex: 1;
   flex-wrap: wrap;
-  line-height: 2em;
 }
 
 .footsec1 > ul {
@@ -336,14 +357,19 @@ footer {
 
 .footsec2 > ul {
   width: 50%;
-  display: block;
+}
+
+.footsec2 > ul:nth-child(2) {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  justify-content: center;
 }
 
 .footsec2 {
   flex: 1;
   flex-wrap: wrap;
   display: flex;
-  line-height: 2em;
   border-left: black 1px solid;
   padding-left: 4rem;
   justify-content: baseline;
@@ -353,6 +379,8 @@ footer {
   display: flex;
   padding: 14px 64px;
   border-top: 1px solid black;
+  line-height: 20px;
+  vertical-align: middle;
 }
 .privacy li {
   padding: 5px;
