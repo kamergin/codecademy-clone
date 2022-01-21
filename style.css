@@ -400,32 +400,20 @@ footer {
 
 /* XL Styles */
 @media only screen and (min-width: 1200px) {
-  .container.top {
-    padding: 12px 96px;
-  }
-
-  .navbar {
-    display: flex;
-    flex-direction: row;
-  }
-
   .btn-bars {
     display: none;
+  }
+  .container.top {
+    padding: 12px 96px;
   }
 }
 /* Desktop Styles */
 @media only screen and (min-width: 1024px) and (max-width: 1199px) {
-  .container.top {
-    padding: 12px 64px;
-  }
-
-  .navbar {
-    display: flex;
-    flex-direction: row;
-  }
-
   .btn-bars {
     display: none;
+  }
+  .container.top {
+    padding: 12px 64px;
   }
 }
 
