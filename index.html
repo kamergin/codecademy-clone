@@ -80,43 +80,47 @@
       <div class="wrapper1">
         <div class="container topic1">
           <div class="sec1-1">
-            <div class="imgback"><img src="img/ana.jpg" /></div>
+            <div class="hero">
+              <img class="herocropped" src="img/ana.jpg" />
+              <img class="herofull" src="https://www.codecademy.com/webpack/39fc70603384584a6d0e9b308b08ec3f.jpeg" /></div>
           </div>
           <div class="sec1-2">
-            <form class="form" action="/action_page.php">
-              <h1>Join the millions learning to code with Codecademy for free</h1>
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" />
-              <div class="infobox">
-                <label for="pass">Password</label>
-                <i onmouseover="info()"
-                id="parent" class="fas fa-info-circle"></i>
-                <div id="popup" style="display: none">
-                  <p>
-                    Create a secure password with at least 8 characters. Avoid
-                    simple phrases or strings like “password”, “qwerty”, or “12345”.
-                  </p>
-                  <p>If your password is too weak, try including:</p>
-                  <p>At least 1 letter and 1 number</p>
-                  <p>A symbol (like !@#$%^)</p>
-                  <p>A mix of upper and lower case letters</p>
+            <div class="form-container">
+              <form class="form" action="/action_page.php">
+                <h1>Join the millions learning to code with Codecademy for free</h1>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" />
+                <div class="infobox">
+                  <label for="pass">Password</label>
+                  <i onmouseover="info()"
+                  id="parent" class="fas fa-info-circle"></i>
+                  <div id="popup" style="display: none">
+                    <p>
+                      Create a secure password with at least 8 characters. Avoid
+                      simple phrases or strings like “password”, “qwerty”, or “12345”.
+                    </p>
+                    <p>If your password is too weak, try including:</p>
+                    <p>At least 1 letter and 1 number</p>
+                    <p>A symbol (like !@#$%^)</p>
+                    <p>A mix of upper and lower case letters</p>
+                  </div>
                 </div>
+                <input type="text" id="pass" name="pass" />
+                <button id="signup" type="submit" value="Sign up">Sign up</button>
+              </form>
+              <div class="smallbox">
+                <p class="small">
+                  By signing up for Codecademy, you agree to Codecademy's
+                  <a href="#">Terms of Service</a> & <a href="#">Privacy Policy</a>.
+                </p>
+                <p>Or sign up using:</p>
               </div>
-              <input type="text" id="pass" name="pass" />
-              <button id="signup" type="submit" value="Sign up">Sign up</button>
-            </form>
-            <div class="smallbox">
-              <p class="small">
-                By signing up for Codecademy, you agree to Codecademy's
-                <a href="#">Terms of Service</a> & <a href="#">Privacy Policy</a>.
-              </p>
-              <p>Or sign up using:</p>
-            </div>
-            <div class="firmsbox">
-              <div class="firms"><img src="img/LinkedIn.svg" /></div>
-              <div class="firms"><img src="img/Google.svg" /></div>
-              <div class="firms"><img src="img/Facebook.svg" /></div>
-              <div class="firms"><img src="img/Github.svg" /></div>
+              <div class="firmsbox">
+                <div class="firms"><img src="img/LinkedIn.svg" /></div>
+                <div class="firms"><img src="img/Google.svg" /></div>
+                <div class="firms"><img src="img/Facebook.svg" /></div>
+                <div class="firms"><img src="img/Github.svg" /></div>
+              </div>
             </div>
           </div>
         </div>
