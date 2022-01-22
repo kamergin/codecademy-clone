@@ -644,8 +644,9 @@ h3 {
   }
 
   .form-container {
-    width: 50%;
+    width: 85%;
     margin: auto;
+    padding-top: 1rem;
   }
 
   .topic4 {
